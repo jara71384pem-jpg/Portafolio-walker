@@ -1,0 +1,179 @@
+﻿* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: "Comic Sans MS", Arial, sans-serif;
+}
+body {
+ background-color: #f2f9ff;
+ color: #333;
+}
+header {
+ background-color: #4fc3f7;
+ color: white;
+ text-align: center;
+ padding: 1.5rem;
+}
+
+nav {
+ background-color: #81d4fa;
+ display: flex;
+ justify-content: center;
+ gap: 1rem;
+ padding: 0.8rem;
+}
+nav a {
+ background-color: white;
+ padding: 0.5rem 1rem;
+ border-radius: 20px;
+ text-decoration: none;
+ color: #0277bd;
+ font-weight: bold;
+}
+nav a:hover {
+ background-color: #e1f5fe;
+}
+main {
+ padding: 1.5rem;
+ display: grid;
+ gap: 1.5rem;
+ max-width: 900px;
+ margin: auto;
+}
+.tarjeta {
+ background-color: white;
+ padding: 1.5rem;
+ border-radius: 15px;
+ box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.tarjeta h2 {
+ margin-bottom: 0.5rem;
+ color: #0288d1;
+}
+.ejemplo {
+ font-size: 1.5rem;
+ margin-top: 0.5rem;
+}
+ul {
+ list-style: none;
+ font-size: 1.2rem;
+}
+footer {
+ background-color: #4fc3f7;
+ color: white;
+ text-align: center;
+ padding: 1rem;
+ margin-top: 1rem;
+}
+/* Responsive */
+@media (max-width: 600px) {
+ nav {
+ flex-direction: column;
+ align-items: center;
+ }
+}
+
+#estrellas span {
+font-size: 2rem;
+cursor: pointer;
+}
+
+/* FIGURAS */
+.circulo { width:100px; height:100px; background:red; border-radius:50%; }
+.cuadrado { width:100px; height:100px; background:blue; }
+.rectangulo { width:150px; height:80px; background:green; }
+.triangulo {
+width:0;
+height:0;
+border-left:50px solid transparent;
+border-right:50px solid transparent;
+border-bottom:100px solid orange;
+}
+
+#figuraDibujo, #dibujoArea {
+display:flex;
+justify-content:center;
+margin-top:10px;
+}
+#figuraDibujo {
+margin-top: 20px;
+display: flex;
+justify-content: center;
+align-items: center;
+height: 150px;
+}
+/* CARITAS */
+.caritas span {
+
+    font-size: 2.5rem;
+
+    cursor: pointer;
+
+    margin: 10px;
+
+    transition: transform 0.3s;
+}
+
+.caritas span:hover {
+
+    transform: scale(1.3);
+}
+
+@media (max-width: 600px) {
+ 
+   
+    nav {
+
+        flex-direction: column;
+ 
+       align-items: center;
+
+    }
+
+
+    .tarjeta {
+
+        margin: 10px;
+ 
+       padding: 15px;
+ 
+   }
+
+h1 {
+font-size: 20px;
+}
+
+button {
+width: 100%;
+}
+
+input{
+width: 100%;
+}
+/* 📱 CELULARES */
+@media (max-width: 600px) {
+
+.tarjeta {
+width: 90%;
+padding: 15px;
+}
+
+select, input, button {
+width: 100%;
+font-size: 1rem;
+}
+
+h1 {
+font-size: 1.5rem;
+}
+
+#dibujoArea {
+transform: scale(0.8);
+}
+
+body {
+    max-width: 500px;
+    margin: auto;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    border-radius: 15px;
+}
